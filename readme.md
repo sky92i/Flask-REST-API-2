@@ -1,5 +1,7 @@
 # Python Flask REST API with MongoDB, Prometheus and Grafana
 
+Assignment of COMP3122
+
 ### Steps to launch the application
 #### Open the shell in myapp folder and execute the following command 
 ```
