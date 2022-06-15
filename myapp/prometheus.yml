@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 1s
+  external_labels:
+      monitor: 'myapp'
+
+rule_files:
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'myflaskapp'
+    static_configs:
+      - targets: ['myflaskapp:15000']
